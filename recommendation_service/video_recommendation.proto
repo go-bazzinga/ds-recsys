@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package video;
+
+service VideoRecommendation {
+  rpc GetRecommendations (RecommendationRequest) returns (RecommendationResponse);
+}
+
+message RecommendationRequest {
+  string userId = 1;
+  repeated string watchHistory = 2;
+  repeated string successfulPlays = 3;
+}
+
+message RecommendationResponse {
+  repeated string videoIds = 1;
+}
