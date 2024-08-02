@@ -1,3 +1,1 @@
-- Run `source setup.sh` 
-- Run `protoc --proto_path=. --python_out=. video_recommendation.proto`
-- Run `recommendation_service.feed_rec_server.py`
+To be addes
